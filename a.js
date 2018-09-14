@@ -1,1 +1,1 @@
-import b from './b';
+import './b';

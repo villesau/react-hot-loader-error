@@ -1,16 +1,12 @@
 #### How to run?
 `yarn`
 
-`yarn test`
+`yarn start`
 
-#### how to fail differently?
+#### how to fix?
 
-1. replace `c.js` content with
+1. replace `a.js` content with
 
 ```
-export function func_1() {
-  return true;
-}
+console.log(123)
 ```
-
-2. remove `rewire` plugin from `.babelrc`
