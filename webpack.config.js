@@ -1,4 +1,4 @@
-'use strict'; // eslint-disable-line
+'use strict';
 
 module.exports = {
   entry: {
@@ -6,35 +6,23 @@ module.exports = {
   },
   output: {
     publicPath: '/app/',
-    filename: '[name].js',
-    pathinfo: false
+    filename: '[name].js'
   },
-  stats: {
-    colors: false,
-    modules: true,
-    reasons: true
-  },
-  watch: false,
-  devtool: '#source-map',
   module: {
-    strictExportPresence: true,
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /(node_modules)/,
         use: [
           {
-            loader: 'babel-loader',
-            query: {
-              cacheDirectory: true
-            }
+            loader: 'babel-loader'
           }
         ]
       }
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
-    modules: []
+    extensions: ['.js'],
+    modules: ['node_modules']
   }
 };
