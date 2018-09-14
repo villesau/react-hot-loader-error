@@ -5,8 +5,7 @@
   "private": true,
   "repository": {},
   "scripts": {
-    "start": "babel-node a.js",
-    "test": "node node_modules/.bin/karma start karma.config.js --single-run"
+    "start": "node node_modules/.bin/webpack --config webpack.config.js "
   },
   "dependencies": {
     "react": "16.3.2",
@@ -20,12 +19,6 @@
     "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.0",
     "babel-plugin-rewire": "^1.2.0-rc.1",
-    "karma": "^1.7.0",
-    "karma-chrome-launcher": "^2.1.1",
-    "karma-webpack": "^2.0.4",
-    "mocha": "^5",
-    "mocha-junit-reporter": "^1.17.0",
-    "mocha-multi-reporters": "^1.1.7",
     "webpack": "^3.2.0"
   }
 }

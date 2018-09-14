@@ -1,7 +1,7 @@
 #### How to run?
 `yarn`
 
-`yarn test`
+`yarn start`
 
 #### how to fail differently?
 

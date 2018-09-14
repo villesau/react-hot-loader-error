@@ -12,13 +12,7 @@
     ]
   ],
   "plugins": [
-    "react-hot-loader/babel"
-  ],
-  "env": {
-    "test": {
-      "plugins": [
-        "rewire"
-      ]
-    }
-  }
+    "react-hot-loader/babel",
+    "rewire"
+  ]
 }
